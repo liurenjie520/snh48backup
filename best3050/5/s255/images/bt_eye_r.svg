@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg113"
+   width="196"
+   height="76"
+   viewBox="0 0 196 76"
+   sodipodi:docname="bt_eye_r.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs>
+		<pattern id="avatar4" width="1116" height="676" x="-220" y="-350" patternUnits="userSpaceOnUse">
+				<image width="1116" height="676" xlink:href="bt_hua.png"/>
+			</pattern>
+		<style>
+			path {
+
+			}
+		</style>
+	</defs>
+  <path
+     style="fill:url(#avatar4)"
+     d="M 0.55,75.118073 C 1.8929732,73.871332 195.0588,-0.27452933 195.58722,0.25388691 195.82623,0.49289676 180.24986,17.633549 160.97307,38.344225 L 125.92436,76 H 62.762181 C 26.240085,76 6.8409021e-4,75.628027 0.55,75.118073 Z M 133.51013,50.871394 c 7.69443,-8.320733 15.66503,-17.040336 17.71245,-19.376896 l 3.72258,-4.248291 -19.22258,7.461355 C 125.15016,38.811306 113.8,43.192424 110.5,44.443379 c -3.3,1.250954 -9.6,3.657899 -14,5.348766 -4.4,1.690867 -15.173833,5.815686 -23.941851,9.166264 -8.768018,3.350577 -16.155518,6.305627 -16.416667,6.566775 C 55.880334,65.786333 70.033725,66 87.593462,66 h 31.926798 z"
+     id="pathA"
+     inkscape:connector-curvature="0" />
+</svg>

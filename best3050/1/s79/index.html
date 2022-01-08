@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2015年 SNH48 年度金曲大赏 REQUEST TIME BEST30 演唱会</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+
+//判断浏览器ie6创建的div的样式和非ie6创建的div的样式
+
+//创建div
+
+function showid(idname){
+
+var isIE = (document.all) ? true : false;
+
+var isIE6 = isIE && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+
+var newbox=document.getElementById(idname);
+
+newbox.style.zIndex="9999";
+
+newbox.style.display="block"
+
+newbox.style.position = !isIE6 ? "fixed" : "absolute";
+
+newbox.style.top =newbox.style.left = "50%";
+
+newbox.style.marginTop = - newbox.offsetHeight / 2 + "px";
+
+newbox.style.marginLeft = - newbox.offsetWidth / 2 + "px";  
+
+var layer=document.createElement("div");
+
+layer.id="layer";
+
+layer.style.width=layer.style.height="100%";
+
+layer.style.position= !isIE6 ? "fixed" : "absolute";
+
+layer.style.top=layer.style.left=0;
+
+layer.style.backgroundColor="#000";
+
+layer.style.zIndex="9998";
+
+layer.style.opacity="0.6";
+
+document.body.appendChild(layer);
+
+var sel=document.getElementsByTagName("select");
+
+for(var i=0;i<sel.length;i++){        
+
+sel[i].style.visibility="hidden";
+
+}
+
+function layer_iestyle(){      
+
+layer.style.width=Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
+
++ "px";
+
+layer.style.height= Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) +
+
+"px";
+
+}
+
+function newbox_iestyle(){      
+
+newbox.style.marginTop = document.documentElement.scrollTop - newbox.offsetHeight / 2 + "px";
+
+newbox.style.marginLeft = document.documentElement.scrollLeft - newbox.offsetWidth / 2 + "px";
+
+}
+
+if(isIE){layer.style.filter ="alpha(opacity=60)";}
+
+if(isIE6){  
+
+layer_iestyle()
+
+newbox_iestyle();
+
+window.attachEvent("onscroll",function(){                              
+
+newbox_iestyle();
+
+})
+
+window.attachEvent("onresize",layer_iestyle)          
+
+}  
+
+layer.onclick=function(){newbox.style.display="none";layer.style.display="none";for(var i=0;i<sel.length;i++){
+
+sel[i].style.visibility="visible";
+
+}}
+
+}
+
+$(function(){
+
+	$("#smallLay1 a,#smallLay2 a").click(function(){
+
+		var act = this.href.split("#")[1];
+
+		$(this).attr("disabled","disabled");
+
+		$("#apDiv3,#apDiv33").text("");
+
+		$.post('do.php?act='+act,$(this).parent().parent().find("input").serialize(),function(ret){
+
+			
+
+			switch(act)
+
+			{
+
+				case 'inquery':
+
+					$("#apDiv3").text(ret.msg);
+
+				break;
+
+				case 'resend':
+
+					if(ret.ok)
+
+						$("#apDiv33").html('<span style="font-size:20px; font-weight:bold">邮件已发送</span><br />通知邮件可能会被系统误认为垃圾邮件，请仔细查收');
+
+					else
+
+						$("#apDiv33").text(ret.msg);
+
+				break;
+
+			}
+
+			$(this).attr("disabled","");
+
+		},"json");
+
+
+
+		return false;
+
+	});
+
+});
+
+</script>
+
+</head>
+
+<body>
+	
+<div id="smallLay101" style="display:none">
+  <div class="box">
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="images/map.jpg" width="800" height="600" /></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="smallLay102" style="display:none">
+  <div class="box">
+    <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style=" padding:20px; background:#fff;">
+			<div class="notice">
+				<h3>注意事项</h3>
+				<div><strong>1、丝瓜币积分：</strong>凡在官方商城购买演唱会门票套餐的所有会员，可获得1倍丝瓜币积分；</div>
+				<div><strong>2、钻石、白金丝瓜用户优选权：</strong>所有钻石、白金级别丝瓜用户可提前1天购买598元门票套餐。
+					<p>购买时间：2014年12月2日11：00开放购买，用户需要在24小时内（2014年12月3日11：00前）付款，否则视为自动放弃资格；</p>
+					<p>购买数量：钻石丝瓜用户可购买2张598元优选门票套餐，白金丝瓜用户可购买1张598元优选门票套餐。</p>
+					<p>PS：优选顺序将根据用户的下单顺序择优发放。</p>
+				</div>
+				<div><strong> 3、其他用户购买：</strong>
+					<p>官方商城购买：2014年12月3日11：00开启，届时将对所有用户开放演唱会全票种套餐购买。</p>
+					<p>购买数量：<b class="red">598元门票套餐，丝瓜用户限购5张，普通用户限购3张。其它门票限购20张。</b></p>
+				</div>
+				<div><strong>4、全国巡演特别印章：</strong>用户在演出当天持“SNH48护照“至专属盖章区域，即可在护照上加盖” SNH48 REQUEST TIME“演唱会印章1枚。</div>
+				<div><strong>5、成员生日特别联票（198元普通看台区）：</strong>SNH48首届REQUEST TIME演唱会将发行一套具有纪念价值的成员生日纪念联票供粉丝珍藏。本次发行的生日联票都将附带对应成员亲笔签名，<b class="red">具体发行时间及规则敬请留意官方公告。</b></div>
+				<div><strong>6、所有门票将根据用户的下单顺序择优发放；</strong></div>
+			</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="wrap">
+	<div class="main">
+		<div class="top">
+			<div class="header">
+				<a href="http://www.snh48.com/" target="_blank" class="logo"><img src="images/logo.png"></a>
+				<div class="header_txt">
+					<p>《SNH48金曲大赏》REQUEST TIME中间发表<a href="http://www.snh48.com/html/allnews/zixun/2014/1121/1023.html" target="_blank">立即查看</a></p>
+					<div class="timer">《SNH48金曲大赏》投票通道现已截止</div>
+				</div>
+			</div>
+			<div class="message">
+				<div class="intro">
+					<h3 class="intro_title">2015年1月31日18:48<br>上海大舞台&nbsp;<strong>上海市徐汇区漕溪北路1111号</strong></h3>
+					<!-- <div class="intro_txt">
+						12月2日11点VIP用户抢先预售。<br>12月3日11点全用户开放购买。
+					</div> -->
+				</div>
+				<div class="ticket">
+					<a href="http://www.snh48.com/event/s86/" target="_blank" class="beat_30"></a>
+					<div class="siqi">
+						<a href="http://www.snh48.com/member_list.html" target="_blank"><img src="images/siqisheng.png"></a>
+					</div>
+					<!-- <table class="ticket_txt">
+						<tr>
+							<td width="33%" valign="top">
+								<div class="ticket_item">
+									<h3 class="orange">内场VIP套餐 598元</h3>
+									<div style=" margin-bottom:10px; text-align:center;"><a><img src="images/buy_o.png"></a></div>
+									<p class="orange">内场VIP套餐包含内容：</b><br>1、内场VIP区门票*1张；<br>2、SNH48户外私服生写*2张（成员随机）；<br>3、SNH48全员全握握手券*1张；<br>4、SNH48应援闪光手环*1个；<br>5、SNH48新年贺卡*1张（成员随机，手写祝福、数码印刷）。</p>
+								</div>
+							</td>
+							<td width="33%" valign="top">
+								<div class="ticket_item">
+									<h3 class="green">看台VIP套餐398元</h3>
+									<div style=" margin-bottom:10px; text-align:center;"><a><img src="images/buy_o.png"></a></div>
+									<p class="green">看台VIP套餐包含内容：<br>1、看台VIP区门票*1张；<br>2、SNH48户外私服生写*2张（成员随机）；<br>3、SNH48新年贺卡*1张（成员随机，手写祝福、数码印刷）。</p>
+								</div>
+							</td>
+							<td valign="top">
+								<div class="ticket_item">
+									<h3 class="blue">看台套餐198元</h3>
+									<div style=" margin-bottom:10px; text-align:center;"><a><img src="images/buy_o.png"></a></div>
+									<p class="blue">看台套餐包含内容：</b><br>1、普通区门票*1张；<br>2、SNH48户外私服生写*2张（成员随机）。</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" width="66%">说明：<b class="red">本次单个订单中购买任意区间门票套餐满2套，均可在现有福利基础上加送SNH48户外私服合影生写*1张。</b>例如：一个订单中，购买1套598元加1套198元（共2套），或者购买2套598元，除获得相应福利外，都将额外获得1张私服合影生写，多买多送，以此类推。</td>
+							<td align="center">
+								<a href="javascript:;" onclick="showid('smallLay102')" class="map"><img src="images/map_btn02.png"></a>
+								<a href="javascript:;" onclick="showid('smallLay101')" class="map"><img src="images/map_btn.png"></a>
+							</td>
+						</tr>
+					</table> -->
+				</div>
+				<div class="video"><embed width="390" height="300" wmode="opaque" allowfullscreen="true" allowscriptaccess="never" type="application/x-shockwave-flash" src="http://www.tudou.com/v/xVH-pl2fZfc/&resourceId=0_04_05_99/v.swf"></div>
+			</div>
+		</div>
+
+		<div class="main_02">
+			<h3 class="title01"><img src="images/title01.png"></h3>
+			<div class="rank">SNH48成立短短两年，已经拥有了五张EP、一张专辑、八场公演、近150首的经典歌曲，与传统的REQUEST TIME演唱会相比，“SNH48 BEST 30金曲大赏”更注重粉丝的选择。在你的心目中，哪首歌才是你心目中的金曲？哪些成员才能够完美驾驭？只有今晚才能看到的表演！你一定不能错过！</div>
+		</div>
+
+		<div class="copywrite">
+			<div class="cw_content">
+				<h3 class="cw_title"><img src="images/t_font03.png"></h3>
+				<div class="cw_item">你一定还记得《青春派对》首演上H队成员们首次登台给我们带来的惊喜，而本次演唱会将是TEAM HII公演以来首次登上如此大的舞台！梦想已经成真，面对台下的一万名观众，<strong class="orange">正在不断成长和进化的TEAM HII是否还能继续给我们带来惊喜？S、N、H三队初次同台演出，又会擦出怎样的火花呢？让我们拭目以待！</strong></div>
+				<h3 class="cw_title"><img src="images/t_font04.png"></h3>
+				<div class="cw_item">全新单曲《呜吒（UZA）》刚刚公开发行，SNH48就已蓄势待发、再接再厉，即将于明年年初推出全新作品！这些还未正式对外公开的全新歌曲将在演唱会当天现场进行首次披露现场版本！同时伴随新歌的公布，还会有全新的服装首次亮相！</div>
+				<h3 class="cw_title"><img src="images/t_font05.png"></h3>
+				<div class="cw_item">随着四期生招募的落下帷幕，所有通过终试的新鲜面孔即将正式加入SNH48的大家庭。本次演唱会同时也将是四期生的入团仪式，新成员将首次亮相与大家见面！</div>
+				<!-- <h3 class="cw_title"><img src="images/t_font01.png"></h3>
+				<div class="cw_item">半年前，SNH48第一届总选举落下帷幕，在五千名粉丝的见证下，吴哲晗最终登顶。半年后，经历了总选举战火的洗礼，成员们在这半年内都发生了什么样的变化？ <strong class="blue">冠军吴哲晗是否能回报歌迷的期待</strong>、交出一份满意的答卷？而迎来成立两周年的SNH48也将在此次带来出道以来的 “汇报”演出！</div> -->
+				<h3 class="cw_title"><img src="images/t_font02.png"></h3>
+				<div class="cw_item">SNH48 年度金曲大赏——作为SNH48 2015年度开幕大戏而备受期待！为此我们特别成立了SNH48历史上最高级别的舞美制作班底，将从灯光、舞美各个方面对演出进行升级！同时为了能让歌迷们即使不在剧场也能近距离与成员们互动，此次演出将会特设延展舞台！大小舞台的设置、台上台下的互动……将会是本次演出的最大看点之一。这份难得的体验和感动，我们邀请您一起来现场感受！</div>
+				<h3 class="cw_title"><img src="images/t_font06.png"></h3>
+				<div class="cw_item">为了答谢歌迷们对“SNH48 BEST 30金曲大赏”的支持，凡购买此次演唱会598价位门票均可获得“SNH48 BEST 30金曲大赏”答谢握手会专属握手券一张，凭此券可参加将于2月1日在星梦剧院举行的专场答谢握手会。届时S、N、H三队全员都将到场感谢大家的支持，这场握手会也将超越“一心向前”答谢握手会、成为SNH48有史以来最大规模的握手会！（活动详情后续发表）</div>
+			</div>
+		</div>
+
+		<div class="footer"><img src="images/footer_pic.jpg"><p>Copyright 2014 ©SNH48 All Rights Reserved.</p></div>
+		
+	</div>
+</div>
+<!--[if IE 6]>
+<script src="http://js.tianjimedia.com/TLimages2009/yesky/js/IE6PNG.js"></script>
+<script type="text/javascript">IEPNG.fix('div,img,a,li')</script>
+<![endif]-->	
+</body>
+</html>

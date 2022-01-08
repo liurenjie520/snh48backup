@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg30"
+   width="56"
+   height="53"
+   viewBox="0 0 56 53"
+   sodipodi:docname="cz_star.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs
+     id="defs34">
+	  <pattern id="avatar2" x="-530" y="-500" width="1116" height="676" patternUnits="userSpaceOnUse">
+			<image width="1116" height="676" xlink:href="bt_hua.png"/>
+      </pattern>
+  </defs>
+  <path
+     style="fill:url(#avatar2)"
+     d="m 10.610149,49.75 c 0.266425,-1.7875 0.828653,-5.95 1.249397,-9.25 l 0.764989,-6 -6.4582679,-6.804 C 2.5699091,23.907118 0.10505174,20.534218 0.60399952,20.084618 1.0967998,19.640557 5.0255162,18.694697 9.3344804,17.982708 13.643445,17.270719 17.774784,16.082358 18.515236,15.341907 19.255687,14.601456 21.562366,10.846615 23.641191,6.9978162 25.720015,3.1490173 27.681479,0 28,0 c 0.318521,0 2.279985,3.1490173 4.358809,6.9978162 2.078825,3.8487988 4.385504,7.6036398 5.125955,8.3440908 0.740452,0.740451 4.871791,1.928812 9.180756,2.640801 4.308964,0.711989 8.23768,1.657849 8.73048,2.10191 0.498964,0.449614 -1.963647,3.822384 -5.557411,7.611382 l -6.453412,6.804 1.164474,9 c 0.640461,4.95 1.012291,9.179006 0.826288,9.39779 -0.186002,0.218785 -3.929221,-1.243715 -8.318263,-3.25 C 32.668633,47.641506 28.580645,46 27.973259,46 c -0.607387,0 -4.513221,1.575 -8.679631,3.5 -4.16641,1.925 -7.933625,3.5 -8.371589,3.5 -0.437964,0 -0.578314,-1.4625 -0.31189,-3.25 z"
+     id="path40"
+     inkscape:connector-curvature="0" />
+</svg>
