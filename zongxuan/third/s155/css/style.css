@@ -1,0 +1,76 @@
+/* CSS Document */
+*{ padding:0; margin:0; font-family: "microsoft yahei",Arial,Helvetica,sans-serif; font-style: normal;}
+ul,li,dl,dd,dt{ list-style: none;}
+img{ border:none;}
+a{ text-decoration:none; color:#f0fbff;}
+
+.red{ color:red;}
+
+body{ background:#000; font-size:18px; color:#fff; line-height:30px;}
+.ls5{ letter-spacing:5px;}/*字间距5像素*/
+.ml50{ margin-left:50px;}
+.ml80{ margin-left:80px;}
+.ml10{ margin-left:10px;}
+.ml20{ margin-left:20px;}
+.mr20{ margin-right:20px;}
+.mt10{margin-top:10px;}
+.mt30{ margin-top:30px;}
+.mb30{margin-bottom:30px;}
+.mb10{margin-bottom:10px;}
+.fbold{ font-weight:bold;}
+.border_r10{
+-moz-border-radius: 10px;      /* Gecko browsers */
+-webkit-border-radius: 10px;   /* Webkit browsers */
+border-radius:10px;            /* W3C syntax */
+}
+.border_r20{
+-moz-border-radius: 20px;      /* Gecko browsers */
+-webkit-border-radius: 20px;   /* Webkit browsers */
+border-radius:20px;            /* W3C syntax */
+}
+
+h1{ font-weight:100; font-size:55px;}
+h1 span{ color:#e3db0c}
+
+.clear:after{ clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+.clear{ height:1%;}
+
+.snh_logo{float:left; width:86px; height:119px; margin-top:12px; background: url(../images/snh_logo.png); display:inline-block;}
+.top_qu{ line-height:30px; float:right; margin-right:10px; color:#fff; }
+.top_qu a{ text-decoration:none; color:#fff; font-size:16px; }
+
+.body1{min-width:1000px;max-width:1920px;margin:0 auto;background:url(../images/bg_low.jpg) top center no-repeat; background-attachment:fixed; padding-top:1px; overflow:hidden;} 
+
+
+.top1{margin:0 auto;width:1000px; position:relative;}
+.zt_logo{width:637px; height:389px; margin:20px auto 0;background: url(../images/zt_logo.png) no-repeat; position:relative;}
+.dy_bt{width:657px; height:78px; background: url(../images/bt1.png); margin:10px auto 0;}
+.dy_con{ width:950px; color:#f9e242; margin:0 auto; text-align:center; padding:0 20px; position:relative; padding-top:15px; font-size:20px; text-shadow:0 0 5px #000}
+
+.list_box{ margin:20px auto 0; padding:20px 10px 20px 20px; width:900px; border:15px solid #0c9ad4; background:#000; overflow:hidden;}
+.list_bt{font-size:30px; color:#0c9ad4; font-weight:bold; padding-bottom:10px;}
+.list_con{ overflow-y:scroll; height:100px;}
+.list_item{ width:415px; padding-right:25px; line-height:35px; height:35px; float:left; font-size:16px;}
+.li_bt{width:115px; float:left;}
+.li_txt{width:300px; float:left; overflow:hidden;white-space: nowrap;text-overflow: ellipsis; transition:200ms;}
+.li_txt:hover{ color:#0c9ad4;}
+
+.bt_lb{width:1000px; margin:60px auto 0; text-align:center;}
+
+.round_bt{ background:#15a1de; height:40px; line-height:40px; font-size:20px; color:#fff; text-align:center; margin-bottom:5px;}
+
+.flipster li{width:216px; height:200px;}
+
+/* jQuery jcImgScroll css */
+.jcImgScroll { position:relative; height:200px; width:1000px; margin:20px auto 0;  }
+.jcImgScroll li { border:1px solid #ccc; }
+.jcImgScroll li a { background:#fff; display:block; height:200px;  }
+.jcImgScroll li.loading a { background:#fff url(img/loading.gif) no-repeat center center;} 
+.jcImgScroll li img,.jcImgScroll li,.jcImgScroll em,.jcImgScroll dl { display:block; border:0 none;}
+.jcImgScroll em.sPrev { background:url(../images/arrow-left.png) no-repeat left center; }
+.jcImgScroll em.sNext { background:url(../images/arrow-right.png) no-repeat right center;}
+
+#myroundabout1,#myroundabout2,#myroundabout3,#myroundabout4,#myroundabout5{margin:40px auto 0;}
+
+.footer_con{ min-width: 1000px; max-width:1920px; margin: 0 auto;}
+.f_bq{ padding: 30px 0 25px; color: #f9e242; font-size: 15px; text-align: center;}

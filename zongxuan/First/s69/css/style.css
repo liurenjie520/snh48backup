@@ -1,0 +1,98 @@
+/* CSS Document */
+*{ padding:0; margin:0; font-family: "microsoft yahei",Arial,Helvetica,sans-serif; font-weight: normal; font-style: normal;}
+ul,li,dl,dd,dt{ list-style: none;}
+img{ border:none;}
+
+.clear:after{ clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+.clear{ height:1%;}
+
+body{ background: url(../images/bg04.jpg) center bottom no-repeat #000;}
+
+.header{ background: url(../images/bg01.jpg) center top no-repeat #000;}
+.header_content{ height: 528px; width: 1074px; margin:0 auto; position: relative;}
+.logo{ position: absolute; left: 0; top: 0; display: block; width: 183px; height: 115px;}
+.link{ text-align: right; color: #583517; font-size: 14px; line-height: 30px; padding-top: 20px;}
+.link a{ text-decoration: none; font-size: 14px; color: #583517; margin:10px;}
+.link a:hover{ color: #fff; text-decoration: underline;}
+.back{ display: inline-block; width: 155px; height: 45px; font-size: 18px; color: #fff; background: #b00311; text-align: center; text-decoration: none; line-height: 45px; float: right; margin-top: 20px; border-radius: 7px; box-shadow: 5px 5px 5px rgba(0,0,0,0.2);}
+.back:hover{ background: #99030f;}
+
+.ep-sale{ background: url(../images/bg02.jpg) center top no-repeat #000;}
+.epsale_con{ height: 485px; width: 1074px; margin:0 auto;}
+.epsale_intro{ position: relative; height: 156px; width: 1000px; margin:0 auto;}
+.ep_pic{ position: absolute; left: 20px; top: -140px; display: block; width: 145px; height: 279px; overflow: hidden;}
+.epsale_txt{ color: #fff; font-size: 12px; padding: 20px 20px 0 185px; line-height: 22px;}
+.ep_two{ width: 1000px; margin:0 auto 17px; height:174px;}
+.epsale_78{ width: 460px; height: 154px; float: left; padding:10px 15px;}
+.sale_450{ width: 460px; height: 154px; float: right; padding:10px 15px;}
+.epsale_list{ float: left; width: 290px;}
+.epsale_title{ color: #ed9527; font-size: 20px; margin-bottom: 10px;}
+.epsale_item{ font-size: 14px; color: #84571f; line-height: 22px;}
+.epsale_buy{ float: left; width: 170px; text-align: right;}
+.epsale_price{ position: relative; font-size: 26px; color: #ed9527; text-align: right; margin-bottom: 15px;}
+.epsale_price strong{ font-size: 45px;}
+.epsale_price i{ position: absolute; font-size: 16px; display: block; top: -5px; right: 0;}
+.buy_now01{ display: inline-block; width: 165px; height: 60px; background: url(../images/buy01.png) left top no-repeat;}
+.buy_now02{ width: 165px; display: inline-block; height: 60px; background: url(../images/buy02.png) left top no-repeat;}
+.buy_wait{ width: 165px; display: inline-block; height: 60px; background: url(../images/buy04.png) left top no-repeat;}
+.epsale_cishan{ width: 920px; margin:0 auto; color: #fff; font-size: 13px; line-height: 25px; height: 90px; padding-top: 15px;}
+.epsale_cishan strong{ color: #ed9527;}
+
+.main{ background: url(../images/bg03.jpg) center top no-repeat; margin-bottom: 30px;}
+.content{ width: 1074px; margin:0 auto;}
+.content_box01{ margin-bottom: 20px;}
+.box_top{ background: url(../images/uzaep_top01.png) left top no-repeat; height: 15px; width: 1074px; overflow: hidden;}
+.box_bottom{ background: url(../images/uzaep_bottom01.png) left top no-repeat; height: 15px; width: 1074px; overflow: hidden;}
+.box_main{ background: url(../images/uzaep_middle01.png) left top repeat-y; width: 1060px; padding: 0 7px;}
+.gift{ width: 888px; padding:20px 85px; margin-bottom: 10px;}
+.title{ width: 888px; height: 53px; background: url(../images/title.png) left top no-repeat; line-height: 53px; overflow: hidden; font-size: 24px; color: #e9ce4c; text-align: center; margin-bottom: 20px;}
+.gift_box{ width: 829px; padding:0 28px;}
+.gift_top{ background: url(../images/uzaep_top03.jpg) left top no-repeat; width: 829px; height: 15px; overflow: hidden;}
+.gift_main{ background: url(../images/uzaep_middle03.jpg) left top repeat-y; width: 789px; padding: 0 20px;}
+.gift_title{border-bottom: 1px solid #000; padding-left: 10px; font-size: 18px; color: #000; padding-bottom: 5px; margin-bottom: 20px;}
+.gift_con{ padding-bottom: 20px;}
+.gift_left{ float: left; width: 340px; padding-right: 20px; border-right: 1px dashed #aaa; margin-right: 20px;}
+.gift_right{ float: left; width: 400px;}
+.gift_one{ border-bottom: 1px dashed #aaa; padding-bottom: 20px; margin-bottom: 20px;}
+.gift_txt{ font-size: 14px; color: #444; line-height: 20px; margin-bottom: 20px;}
+.link_s71{ color: #ff0000; font-size: 12px; text-decoration: none; line-height: 18px;}
+.link_s71:hover{ text-decoration: underline;}
+.gift_alone{ color: #000; text-align: right;}
+.gift_left img{ vertical-align: middle;}
+.gift_vote{ display: inline-block;}
+.gift_bottom{ background: url(../images/uzaep_bottom03.jpg) left top no-repeat; width: 829px; height: 15px; overflow: hidden;}
+.box_line{ background: url(../images/uzaep_line.jpg) left top no-repeat; height: 3px; width: 1060px; overflow: hidden; margin-bottom: 30px;}
+.cd-dvd{ padding-bottom: 20px;}
+.cd_main{ width: 930px; height: 211px; overflow: hidden; background:url(../images/bg05.jpg) left top no-repeat; padding:40px; margin:0 auto;}
+.cd{ width: 530px; float: left;}
+.cd_title{ color: #e0a718; font-size: 24px; margin-bottom: 10px;}
+.cd_list li{ float: left; color: #fff; width: 240px; line-height: 30px; font-size: 14px; margin-bottom: 5px; font-weight: 600;}
+.dvd{ width: 400px; float: left;}
+.dvd_list li{ color: #fff; line-height: 30px; font-size: 14px; margin-bottom: 5px; font-weight: 600;}
+.cd-dvd .title{ margin:0 auto 20px; width: 888px; height: 53px; background: url(../images/title.png) left top no-repeat; line-height: 53px; overflow: hidden; font-size: 24px; color: #e9ce4c; text-align: center;}
+
+.goods{ margin-bottom: 20px;}
+.goods_main{ padding-bottom: 20px;}
+.goods_main .title{ margin:0 auto 30px;}
+.three_left{ width: 479px; border-right: 1px dashed #ccc; float: left; margin-left: 50px; _margin-left: 20px;}
+.three_right{ width: 460px; float: right; padding-left: 19px; margin-right: 50px; _margin-right: 20px;}
+.three_left ul,.three_right ul{ width: 460px;}
+.title04{ border-width:1px 0; border-style: solid; border-color: #ccc; padding: 5px 0 5px 20px; margin-bottom: 20px;}
+.title04 a{ font-size: 16px; text-decoration: none; color: #000; line-height: 25px;}
+.title04 a:hover{ color: #b94e11;}
+.goods_div{ text-align: center; margin-bottom: 20px; height: 200px;}
+.goods_buy{ margin-bottom: 20px;}
+.goods_buy a{ display: block; width: 133px; height: 34px; overflow: hidden; margin: 0 auto;}
+
+.notice_top{ height: 15px; width: 1074px; background: url(../images/uzaep_top02.png) left top no-repeat; overflow: hidden;}
+.notice_main{width: 1060px; padding: 0 7px; background: url(../images/uzaep_middle01.png) left top repeat; height: 457px;}
+.notice_bottom{ height: 15px; width: 1074px; background: url(../images/uzaep_bottom02.png) left top no-repeat; overflow: hidden;}
+.notice_content{ padding:20px 0; height: 417px; background: url(../images/uzaep_middle02.jpg) right top no-repeat;}
+.notice_content .title{ margin:0 auto 20px;}
+.notice_txt{ font-size: 14px; line-height: 25px; width: 980px; margin:0 40px;}
+.notice_txt a{ color: #40a2fc;}
+.notice_txt strong{ font-weight: 600;}
+.notice_txt p{ text-indent: 2em;}
+
+.footer{ height: 80px; line-height: 80px; text-align: center; width: 1074px; margin:0 auto; color: #834615; font-size: 14px;}
+

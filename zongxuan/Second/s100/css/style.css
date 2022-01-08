@@ -1,0 +1,106 @@
+/* CSS Document */
+
+*{ padding:0; margin:0; font-family:"微软雅黑"; font-weight: normal; font-style: normal;}
+
+ul,li,dl,dd,dt{ list-style: none;}
+
+img{ border:none;}
+
+
+body{background: url(../images/back_2.jpg) #000; }
+
+.clear:after{ clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+
+.clear{clear:both;}
+
+.top_1{ background: url(../images/top_1.jpg) center top no-repeat;}
+.top_1_c{ background: url(../images/top_2.jpg) center top no-repeat; height: 526px; width: 1000px; margin:0 auto; }
+.top_qu{ line-height:50px; float:right; margin-right:20px; color:#fff; }
+.top_qu a{ text-decoration:none; color:#fff;}
+.vio{ float:right; clear:both; color:#60d5ff; font-size:24px; margin:425px 30px 0 0;}
+
+
+
+.zhong{ background: url(../images/back_1.jpg) center top no-repeat;}
+
+.hc_1{  width: 1000px; margin:0 auto; height:154px; background: url(../images/hc_1.jpg) no-repeat;}
+.hc_1 .hc1_l{ margin:0 5px 0 25px; width:787px; float:left; color:#60d5ff;}
+.hc_1 .hc1_r{ float:left; width:158px;}
+.w1{ font-size:24px; padding-bottom:10px; border-bottom:1px dashed #60d5ff;}
+.w2{ font-size:20px; padding-top:10px;}
+
+.hc_2{  width: 1000px; margin:0 auto; height:504px; background: url(../images/hc_2.jpg) no-repeat;}
+.hc_2 .hc2_u{ margin:18px 0 0 25px; float:left;}
+.hc_2 .hc2_ti_1{ background: url(../images/tic_b_1.jpg); width:715px; height:154px; float:left}
+.hc_2 .hc2_ti_2{ background: url(../images/tic_b_2.gif); width:298px; height:298px; float:left; margin:15px 22px 0 0;}
+.hc_2 .hc2_ti_3{ background: url(../images/tic_b_3.gif); width:298px; height:298px; float:left; margin:15px 22px 0 0;}
+.hc_2 .hc2_ti_4{ background: url(../images/tic_b_4.gif); width:298px; height:298px; float:left; margin:15px 22px 0 0;}
+.hc_2 .hc2_ti_nb{ width:206px; height:154px; float:left; margin-left:25px; }
+.hc_2 .hc2_ti_nb img{ margin:12px 0;}
+.w3{ width:392px; height:115px; float:left; margin:20px 0 0 166px; color:#d6aeff; font-size:14px; line-height:18px;}
+.w4{ width:250px; height:162px; float:left; margin:65px 0 0 24px; color:#efb44a; font-size:14px; line-height:18px;}
+.w5{ width:250px; height:162px; float:left; margin:65px 0 0 24px; color:#64a9c6; font-size:14px; line-height:18px;}
+.w6{ width:250px; height:162px; float:left; margin:65px 0 0 24px; color:#acff96; font-size:14px; line-height:18px;}
+.nb_1{width:144px; height:115px; float:left; margin-top:20px;}
+.nb_1 a{width:144px; height:115px; display:block;}
+.nb_2{width:260px; height:48px; float:left; margin-left:20px; margin-top:5px;}
+.nb_2 a{width:260px; height:48px; display:block;}
+
+.hc_3{  width: 1000px; margin:0 auto; height:304px; background: url(../images/hc_3.jpg) no-repeat;}
+.hc_3 .video{ width:412px; height:304px; margin-left:10px; float:left;}
+.hc_3 .tic_sm{ margin-left:16px; background: url(../images/tic_sm.jpg) no-repeat; width:549px; height:304px; float:left;}
+.hc_3 .tic_sm_u{ margin:46px 0 0 5px;}
+.sm_1{ width:220px; float:left; line-height:25px; font-size:14px;}
+.sm_2{ width:280px; float:left; line-height:25px; font-size:14px;}
+.sm_3{ width:538px; float:left; line-height:25px; font-size:14px;}
+.bl{ color:#60d5ff;}
+.ju{ color:#ea9a2a;}
+
+
+.hc_725{  width: 1000px; margin:0 auto; height:808px; background: url(../images/hc_725.jpg) no-repeat; color:#60d5ff; overflow:hidden;}
+.w725{ margin:70px 0 10px 0; line-height:20px;}
+.p725{ text-align:center; }
+.p725 img{ margin:0 10px; }
+
+
+.hc_4{  width: 1000px; margin:0 auto; height:1070px; background: url(../images/hc_4.jpg) no-repeat;}
+.w7{ float:left; margin:157px 0 0 331px; font-size:18px; line-height:24px; width:615px;}
+.w8{ float:left; margin:167px 0 0 65px; font-size:18px; line-height:24px; width:615px;}
+.w9{ float:left; margin:192px 0 0 331px; font-size:18px; line-height:24px; width:615px;}
+.w10{ float:left;  margin:118px 0 0 65px; font-size:18px; line-height:24px; width:615px;}
+
+.hc_5{  width: 1000px; margin:0 auto; height:431px; background: url(../images/hc_5.jpg) no-repeat; position:relative;}
+.w11{ margin:315px 0 0 130px; font-size:24px; float:left;}
+.w11 a{ text-decoration:none;}
+.layfu{width:1000px; height:431px; display: block; position:absolute; left: 0px; top: 0px;}
+
+.hc_6{  width: 1000px; margin:0 auto; height:448px; background: url(../images/hc_6.jpg) no-repeat;}
+.sp_list{ margin:125px auto 0 auto; float:left;}
+.sp_list .sp{ width:181px; height:315px; text-align:center; float:left; padding:4px; background:#4da9cb; margin:0 4px;}
+.sp_list .sp .sp_pic{ height:204px; text-align:center; background:#FFF;}
+.sp_list .sp .sp_pic img{ margin-top:20px;}
+.sp_list .sp .sp_1{ line-height:35px; color:#FFF;}
+.sp_list .sp .sp_2{ border-bottom:dashed 1px #fff; width:181px; margin:0 auto; }
+.sp_list .sp .sp_3{ color:#fff; margin-top:3px; }
+.sp_list .sp .sp_w{ font-size:30px; }
+.sp_list .sp .sp_4{ width:89px; height:25px; text-align:center; background:#fff; color:#4da9cb; display:block; line-height:20px; text-decoration:none; margin:5px auto; }
+.sp_list .sp .sp_5{ width:89px; height:25px; text-align:center; background:#a49d8f; color:#FFF; display:block; line-height:20px; text-decoration:none; margin:25px auto 5px auto; }
+.sp_list .sp .sp_6{ width:89px; height:25px; text-align:center; background:#a49d8f; color:#FFF; display:block; line-height:20px; text-decoration:none; margin:5px auto 5px auto; }
+
+.hc_7{  width: 1000px; margin:0 auto; height:460px; background: url(../images/hc_7.jpg) no-repeat;}
+
+.hc_8{  width: 1000px; margin:0 auto; height:430px; background: url(../images/hc_8.jpg) no-repeat;}
+.smw_1{ width: 1000px; margin-top:117px; text-align:center; float:left;}
+.w12 { padding:4px 10px; background:#292012; line-height:50px;}
+.pg{ width:978px; height:216px; padding:0 4px ; background:#c67d16; float:left; margin:0 auto;}
+
+.hc_9{  width: 1000px; margin:0 auto; height:100px; background: url(../images/hc_9.jpg) no-repeat; text-align: center; line-height: 100px; font-size:12px; color:#fff;}
+
+
+.fu_ban{background: url(../images/ban.png) center top no-repeat; width:592px; height:394px;}
+.fu_ban .word{ padding:29px;}
+.w13{ text-align:center; font-size:30px; line-height:70px; border-bottom:1px dashed #FFF;}
+.w14{ color:#FFF; line-height:25px; margin-top:10px; font-size:14px;}
+.fu_ban .pic{ padding:19px;}
+
+

@@ -1,0 +1,123 @@
+/* CSS Document */
+*{ padding:0; margin:0; font-family: "microsoft yahei",Arial,Helvetica,sans-serif; font-weight: normal; font-style: normal;}
+ul,li,dl,dd,dt{ list-style: none;}
+img{ border:none;}
+
+.clear:after{ clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+.clear{ height:1%;}
+
+.the_one{ background: url(../images/bg01.jpg) center top no-repeat #000;}
+.one_content{ width: 1000px; margin: 0 auto; height: 934px;}
+.header{ height: 524px; position: relative;}
+.logo{ display: block; width: 183px; height: 115px; position: absolute; left: 10px; top: 10px;}
+.link{ color: #583517; text-align: right; font-size: 14px; line-height: 25px;}
+.link a{ color: #583517; text-decoration: none; font-size: 14px; margin:0 10px;}
+
+.one_left{ float: left; width: 460px; margin: 0 29px 0 24px; position: relative;}
+.video{ border:2px solid #000; margin-bottom:10px;}
+.timerss{ color: #fff; font-size: 16px; text-align: center; font-weight: 600; position: absolute; left: 0; width: 500px; bottom: -36px;}
+.timerss input{ width: 25px; background: #e19a23; border:0; height: 35px; line-height: 35px; padding:0 3px; font-size: 20px; color: #fff; font-weight: 600; text-align: center;}
+.timerss strong{ color: #fff; margin:0 3px;}
+.one_right{ float: left; width: 463px; height: 377px; position: relative; padding-top: 26px;}
+.banner{ width: 463px; height: 298px;}
+.flash_wt{ position: relative;}
+.banner_pic{height: 298px; background: #54392a;}
+.flash_bar{ text-align: right; position: absolute; right: 10px; bottom: 30px;}
+.no,.dq,.slide-li li{ cursor: pointer; margin:5px; float: left; width: 12px; height: 12px; background-image:url(../images/top_flash_p.png); background-repeat: no-repeat;}
+.no,.slide-li li{ background-position: -19px 0;}
+.dq,.slide-li .cur{ background-position: 0 0;}
+.slide-li{ position: absolute; right: 10px; bottom: 10px;}
+.ep_link{ position: absolute; bottom: 0; left: 75px;}
+.ep_link a{ display: inline-block; width: 305px; height: 100px; font-size: 30px; color: #fff; text-align: center; line-height: 85px; background: url(../images/ep.png) left top no-repeat; text-decoration: none;}
+
+
+.the_two{ background: url(../images/bg02.jpg) center top no-repeat #000;}
+.two_content{ margin: 0 auto; width: 1000px;}
+.two01{ background: url(../images/new_bg.png) 1px top no-repeat; height: 367px; padding-bottom: 27px;}
+.intro{ float: left; width: 415px;}
+.intro_box{ background: url(../images/intro.jpg) left top no-repeat; width: 374px; height: 285px; margin: 25px 0 0 6px; padding:20px 10px 10px 20px; color: #fff; font-size: 14px; line-height: 30px;}
+.two01_right{ float: left; width: 525px; height: 320px; padding:25px 30px 22px 30px; }
+.tabs_menu{ border-bottom: 1px solid #5f4b31;}
+.tabs_menu a{ display: inline-block; height: 42px; color: #3a1f0c; padding:0 20px; text-decoration: none; line-height: 42px; font-size: 18px; font-weight: 600;}
+.tabs_menu a:hover{ background: #979797; color: #fff;}
+.tabs_menu .tab_on,.tabs_menu .tab_on:hover{ background: #5f4b31; color: #fff;}
+.tabs_content{}
+.tabs_item{ height: 277px;}
+.tabs_newlist li{ margin-top: 5px; width: 525px; height: 27px; line-height: 27px; overflow: hidden; font-size: 14px; color: #000; border-bottom: 1px dashed #aaa;}
+.tabs_newlist li a{ font-size: 14px; color: #000; text-decoration: none;}
+.tabs_newlist li a:hover{ text-decoration: underline;}
+.subao{ background: url(../images/wait.jpg) center center no-repeat;}
+.two02{ padding-bottom: 30px;}
+.title01{ background: url(../images/title02.png) left top no-repeat; width: 888px; margin:0 auto; display: block; height: 53px; line-height: 53px; text-align: center; font-size: 24px; color: #f1d864;}
+.two02_txt{ line-height: 25px; color: #fff; font-size: 14px; padding:0 30px; text-indent: 2em; padding:20px 0;}
+.two02_picbox{ height: 329px;}
+.two02_picbox img{ border:2px solid #544e4a;}
+.two02_bigger{ float: left; width: 538px; height: 325px; overflow: hidden; margin-right: 16px; background: #000; position: relative;}
+.two02_big{ width: 256px; height: 329px; overflow: hidden; float: left; margin-right: 16px;}
+.two02_big img{ margin-bottom: 5px;}
+.two02_small{ width:  171px; height: 329px; overflow: hidden; float: left;}
+.two02_small img{ margin-bottom: 5px;}
+.two03{ background: url(../images/bg05.png) left top repeat; padding:20px; margin-bottom: 25px;}
+.title02{ display: block; margin-bottom: 20px; width: 204px; height: 50px; background: url(../images/title01.png) left top no-repeat; text-align: center; line-height: 48px; font-size: 18px; color: #fff;}
+#flashBg_t{ padding:20px; height: 169px; position: relative;}
+#flashLine_t{ position: relative; overflow: hidden; width: 858px; height: 169px; margin: 0 auto;}
+#flashLine_t ul{ position:absolute;}
+#flashLine_t li{ float: left; width: 286px; height: 169px; overflow: hidden; text-align: center;}
+#flashLine_t li a{ display: block; width: 246px; height: 169px; margin:0 auto; overflow: hidden; position: relative;}
+#flashLine_t li span{ float: left; position: absolute; left: 0; top: 0; width: 246px; height: 169px; background: url(../images/play.png) center center no-repeat;}
+.munList{ display: inline-block; width: 23px; height: 45px; background-image: url(../images/next_pre.png); background-repeat: no-repeat; position: absolute; top:82px;}
+.flash_pre{ background-position: 0 0; left: 10px;}
+.flash_pre:hover{ background-position: 0 -50px;}
+.flash_next{ background-position: -29px 0; right: 10px;}
+.flash_next:hover{ background-position: -29px -50px;}
+.two04{ margin-bottom: 20px;}
+.two04_p{ color: #fff; text-align: center; padding:20px 0; line-height: 20px; font-size: 14px;}
+.two04_p strong{ color: #962d11; font-size: 18px;}
+.two04_box{ background: url(../images/bg04.jpg) left top no-repeat; height: 338px; width: 1000px; overflow: hidden;}
+.two04_box ul{ width: 930px; _width: 950px; margin:50px auto 0;}
+.two04_box li{ float: left; width: 290px; min-height: 220px; _height:220px; margin-left: 20px;}
+.two04_box li a{ display: block; width: 232px; height: 148px; margin-bottom: 10px;}
+.two04_box li div{ width: 235px; color: #fff; font-size: 14px;}
+.two04_box1{ background: url(../images/lun.png) left top no-repeat;}
+.two04_box2{ background: url(../images/weibo.png) left top no-repeat;}
+.two04_box3{ background: url(../images/weixin.png) left top no-repeat;}
+.two05_content{ width: 830px; margin:0 auto;}
+.two05_top{ height: 12px; background: url(../images/top01.jpg) left top no-repeat; overflow: hidden;}
+.two05_box{ background: url(../images/middle01.jpg) left top repeat-y; padding:10px 20px;}
+.two05_bottom{ height: 12px; background: url(../images/bottom01.jpg) left top no-repeat; overflow: hidden;}
+.title03{ border-style: solid; border-width: 1px 0; border-color: #312217; line-height: 30px; font-size: 16px; padding:5px 0; margin-bottom: 10px;}
+.title03 strong{ color: #88280e; font-weight: 600;}
+.down_pic,.down_pifu,.down_video{ display: inline-block; width: 160px; height: 99px; margin: 0 15px; overflow: hidden;}
+.down_pic{ background: url(../images/btn01.jpg) left top no-repeat;}
+.down_pic:hover{ background: url(../images/btn01.jpg) left -109px no-repeat;}
+.down_pifu{ background: url(../images/btn02.jpg) left top no-repeat;}
+.down_pifu:hover{ background: url(../images/btn02.jpg) left -109px no-repeat;}
+.down_video{ background: url(../images/btn03.jpg) left top no-repeat;}
+.down_video:hover{ background: url(../images/btn03.jpg) left -109px no-repeat;}
+.down_more{ color: #fff; font-size: 16px; text-decoration: none; background: #5db5f3; display: inline-block; width: 140px; height: 79px; overflow: hidden; margin-left: 15px; padding:20px 0 0 20px;}
+.down_more:hover{ background: #1b83cc;}
+
+.the_three{ background: url(../images/bg03.jpg) center bottom no-repeat #000; padding-top: 40px;}
+.three_content{ width: 1000px; margin:0 auto;}
+.three_top{ height: 10px; overflow: hidden; background: url(../images/top02.png) left top no-repeat;}
+.three_box{ background: url(../images/middle02.jpg) left top repeat-y; padding:10px 20px; width: 960px;}
+.three_left{ width: 479px; border-right: 1px dashed #ccc; float: left;}
+.three_right{ width: 460px; float: right; padding-left: 19px;}
+.three_left ul,.three_right ul{ width: 460px;}
+.title04{ border-width:1px 0; border-style: solid; border-color: #ccc; padding: 5px 0 5px 20px; margin-bottom: 20px;}
+.title04 a{ font-size: 16px; text-decoration: none; color: #000; line-height: 25px;}
+.title04 a:hover{ color: #b94e11;}
+.goods_div{ text-align: center; margin-bottom: 20px; height: 200px;}
+.goods_buy{ margin-bottom: 20px;}
+.goods_buy a{ display: block; width: 133px; height: 34px; overflow: hidden; margin: 0 auto;}
+.three_bottom{ height: 10px; overflow: hidden; background: url(../images/bottom02.png) left top no-repeat;}
+.footer{ color: #583517; line-height: 30px; padding:20px 0; text-align: center; font-size: 12px;}
+
+
+.menu{ background: url(../images/menu.png) left top no-repeat; padding:0 8px; height: 430px; width: 132px; position: absolute; right: 0; top: 200px;}
+.menu_list{ padding-top: 15px;}
+.menu_list li{ border-bottom: 1px dashed #402f14; display: block; height: 46px; width: 132px;}
+.menu_list li a{ display: block; height: 46px; width: 132px; text-align: center; line-height: 46px; text-decoration: none; color: #f5dd92;}
+.menu_list li a:hover,.menu_list .on{ background: #5f4b31;}
+.menu_list .back_top{ padding-top: 6px; height: 40px;}
+.menu_list .back_top a{ background: #9f0100; color: #fff; display: block; height: 35px; line-height: 35px; width: 110px; margin:0 auto;}

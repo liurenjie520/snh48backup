@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body{background:url(../images/bg.jpg) center top no-repeat #fff; font-family:"微软雅黑"; margin:0px; color:#313232;}
+
+img{border:0px;}
+
+ul, li, ol, ul {
+	list-style:none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, input, button, textarea, select, p { margin:0; padding:0; }
+
+
+
+.top{ background:url(../images/top.jpg)  center top no-repeat; margin:0px auto;  width:1024px; height:765px; }
+.top .tip{ float:left; margin-left:550px; line-height:30px; color:#fff;}
+.top .tip a{ color:#FFF; text-decoration:none;}
+.top .word{ float:left; margin:337px 0 0 269px; width:720px; color:#121313; line-height:24px;}
+
+.top .nb1{ float:left; width:141px; height:42px; margin:70px 0 0 290px;}
+.top .nb2{ float:left; width:141px; height:42px; margin:150px 0 0 310px;}
+
+.top .title{ float:left; margin:23px 0 0 28px; width:490px; color:#ec008c; font-size:19px;}
+.top .min{ float:left; margin:15px 0 0 23px; width:490px; color:#121313; font-size:12px;line-height:18px;}
+
+.top .titleyu{ float:right; margin:-94px 0 0 28px; width:490px; color:#ec008c; font-size:19px;}
+.top .minyu{ float:right; margin:-54px 0 0 23px; width:490px; color:#121313; font-size:12px; line-height:18px;}
+
+.mid{ margin:0px auto; position:relative; width:1004px;}
+.mid .kuang{ width:1004px; background-color:#26b3f1; float:left;}
+.mid .kuang_1{ width:1004px; background-color:#26b3f1; float:left; height:10px;}
+.mid .nei{ width:984px; background-color:#fff; float:left; margin:10px 10px 0 10px;}
+
+.mid .nei .n_1{ margin:15px 15px 15px 20px; float:left; font-size:32px; font-weight:bold; width:190px; color:#313232;}
+.mid .nei .n_2{ margin:25px 0 20px 8px; float:left; width:1px; background-color:#313232; height:32px;}
+.mid .nei .n_2_a{ margin:25px 0 20px 8px; float:left; width:1px; background-color:#313232; height:200px;}
+.mid .nei .yu01{ margin:25px 0 0px 8px; float:left; width:153px;  height:229px;}
+.mid .nei .yu011{ margin:0px 0 10px 8px; float:left; }
+.mid .nei .n_3{ margin:15px 15px 15px 20px; float:left; line-height:24px; width:400px;  }
+.mid .nei .n_3a{ margin:15px 15px 15px 20px; float:left; line-height:24px; width:500px;  }
+.mid .nei .n_4{ float:left; width:983px;}
+
+.mid .nei_2{ width:984px; background-color:#fff;float:left; margin:10px 10px 0 10px; background:url(../images/bj_jx01.jpg) no-repeat; }
+.mid .nei_2 .n_1{ margin:15px 15px 15px 20px; float:left; font-size:32px; font-weight:bold; width:300px; color:#313232;}
+.mid .nei_2 .n_1yu1{ margin:15px 15px 15px 20px; float: left; font-size:32px; font-weight:bold; width:290px; color:#313232;}
+.mid .nei_2 .n_2{ margin:25px 0 20px 8px; float:left; width:1px; background-color:#313232; height:200px;}
+.mid .nei_2 .n_3{ margin:15px 15px 15px 20px; float:left; line-height:24px; width:950px; }
+
+.mid .nei_2 .pic{margin-top:10px;}
+.mid .nei_2 .n_5{ float:left; width:490px;}
+.mid .nei_2 .n_5 .nw{ float:left; width:490px; margin:10px 0 0 20px;}
+.mid .nei_2 .n_5 .nb{ float:left; width:260px; margin:5px 0 20px 120px;}
+.pink{ color:#e4007f; }
+.w18{font-size:24px;}
+.w8{font-size:12px;}
+
+
+.bot{ margin:0px auto; width:1024px; position:relative;}
+
+.bot .n_l{ width:431px; float:left;}
+.bot .n_r{ margin:0px auto; position:relative; width:1004px}
+.bot .n_r .b_k{ width:1004px; float:left; background:#26b3f1; }
+.bot .n_r .b_k .b_n{ width:944px; float:left; background:#fff; margin:10px 10px 10px 10px; padding:10px 20px 10px 20px; font-size:14px; height:320px; background:url(../images/gmzs_0111.jpg) no-repeat; }
+.bot .n_r .b_k .b_n a{ color:#313232;}
+
+
+
+.footer{ background:#26b3f1; margin:0px auto; min-width:1000px;background:url(../images/foon_d01.jpg) center top no-repeat;  height:100px; }
+.f_k{ margin:-30px 0px 0px 0px; line-height:50px; text-align:center; color:#fff;  min-width:1000px; background:#26b3f1; }
+
+
+#apDiv {
+	position:absolute;
+	left:776px;
+	top:9px;
+	width:278px;
+	height:28px;
+	z-index:1;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#apDiv1 a{
+	display: block;
+	position:absolute;
+	left:533px;
+	top:379px;
+	width:141px;
+	height:99px;
+}

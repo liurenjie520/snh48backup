@@ -1,0 +1,689 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>SNH48 GROUP 第八届偶像年度人气总决选</title>
+		<meta name="keywords" content="snh,48,SNH48,snh48,招募,报名,中国,官网,官方,网站,少女,组合,偶像,团体" />
+		<meta name="description" content="SNH48、华语区大型女子偶像团体，隶属于上海丝芭文化传媒集团有限公司，是基于互联网思维和参与感精神、O2O构架和[可面对面偶像]运营理念的近距离养成式造星平台，其发展目标是在全球十四亿中国人中甄选优才，充分运用互联网和社交网络时代最具想象力，创新性和前瞻性的造星理念和技术手段, 积极培育兼具音乐舞蹈和影视表演才艺的全方位偶像艺人, 全力打造健康向上、充满青春活力、具备国际影响力的全球华语区第一女子偶像团体，并使之成为互联网和社交传媒时代中国偶像文化和粉丝经济产业的新标杆。" />
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="js/swiper/swiper-5.3.6.min.css">
+		<link rel="stylesheet" href="js/dropdown/dropdown.css">
+		<link rel="stylesheet" href="js/pagination/pagination.css">
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<style type="text/css">
+			[v-cloak] {
+			    display: none;
+			} 
+			.bej-def{background-color: #ff2471;}
+			.gnz-def{background-color: #aac913;}
+			.name{text-align: center;}
+			.rank-increase,.rank-omit{display: none !important;}
+			.week8 .rank-increase{display: block !important;}
+		</style>
+		<!--css-->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!--js-->
+	</head>
+	<body id="inner">
+		<header>
+			<script src="js/nav.js"></script>
+			<!--nav-->
+		</header>
+		<!--header-->
+		<div class="page" id="report" v-cloak>
+			<section class="s1">
+				<h1 v-if="week1.top16 !=null"><img src="image/title-report.png" alt="数据发表"></h1>
+				<div class="content">
+					<h3 class="tab">
+						<a v-show="week8.length != 0" id="0" href="javascript:;">8月7日最终发表</a>
+						<a v-show="week7.length != 0" id="1" href="javascript:;">8月1日周报</a>
+						<a v-show="week6.length != 0" id="2" href="javascript:;">7月25日周报</a>
+						<a v-show="week5.length != 0" id="3" href="javascript:;">7月18日中报</a>
+						<a v-show="week4.length != 0" id="4" href="javascript:;">7月11日周报</a>
+						<a v-show="week3.length != 0" id="5" href="javascript:;">7月4日周报</a>
+						<a v-show="week2.length != 0" id="6" href="javascript:;">6月27日速报</a>
+						<a v-show="week1.length != 0" id="7" href="javascript:;">6月20日周报</a>
+					</h3>
+					<div class="tab-content swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide week8">
+								<p class="info">{{week8.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week8.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week8.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week8.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- <div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week8.top58">
+											<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+											<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+										</li>
+										
+									</ul>
+								</div> -->
+								<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<!--<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week8.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2 v-if="week8.up"><b>潜力新人榜<span></span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week8.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--8月7日最终发表-->
+							<li class="swiper-slide">
+								<p class="info">{{week7.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week7.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week7.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week7.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week7.top58">
+											<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+											<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<!--<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week7.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（XX月XX日17:00 — XX月XX日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week7.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--8月1日周报-->
+							<li class="swiper-slide">
+								<p class="info">{{week6.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week6.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week6.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week6.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week6.top58"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>
+								<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<!--<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week6.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（XX月XX日17:00 — XX月XX日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week6.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--7月25日周报-->
+							<li class="swiper-slide">
+								<p class="info">{{week5.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week5.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week5.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week5.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span><!-- （按姓名排序） --></span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week5.top58">
+											<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+											<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<!--<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week5.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（XX月XX日17:00 — XX月XX日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week5.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--7月18日中报-->
+							<li class="swiper-slide">
+								<p class="info">{{week4.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week4.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week4.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week4.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week4.top58"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>
+								<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<!--<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week4.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（XX月XX日17:00 — XX月XX日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week4.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--7月11日周报-->
+							<li class="swiper-slide">
+								<p class="info">{{week3.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week3.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week3.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week3.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week3.top58"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>
+								<!--<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week3.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>-->
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（XX月XX日17:00 — XX月XX日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week3.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+												<!-- <p class="pm">第<b>{{item.rank}}</b>名</p> -->
+											</div>
+										</li>
+										
+									</ul>
+								</div>
+							</li>
+							<!--7月4日周报-->
+							<li class="swiper-slide">
+								<p class="info">{{week2.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week2.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week2.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week2.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span><!-- （按姓名排序） --></span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week2.top58">
+											<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+											<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+										</li>
+										
+									</ul>
+								</div>
+								<!--<div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week2.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>
+								<div class="rank-increase">
+									<h2><b>单周票数增长榜<span>（06月20日17:00 — 06月27日17:00）</span></b></h2>
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week2.up">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+								</div>-->
+							</li>
+							<!--6月27日速报-->
+							<li class="swiper-slide">
+								<p class="info">{{week1.title}}</p>
+								<div  class="rank">
+									<ul class="rank-grid rank-grid-16">
+										<li v-for="(item,index) in week1.top16">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										<!--单个排名成员-->
+									</ul>
+									<!--TOP16-->
+									<ul class="rank-grid rank-grid-32">
+										<li v-for="(item,index) in week1.top32">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+										
+									</ul>
+									<ul class="rank-grid rank-grid-48">
+										<li v-for="(item,index) in week1.top48">
+											<div>
+												<a href="javascript:;">
+													<div class="photo-bg"></div>
+													<div class="photo" :style="{backgroundImage: 'url(./resource/img/report/'+item.sid+'.png)'}"></div>
+												</a>
+												<p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p>
+												<p v-if="item.voteNum !=0" class="num"><b>{{item.voteNum}}</b>票</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="rank-other">
+									<h2><b>TOP49 - 58<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week1.top58"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div>
+								<!-- <div class="rank-other"><b class="rank-omit">• • •</b></div>
+								<div class="rank-other">
+									<h2><b>最后20名<span>（按姓名排序）</span></b></h2>
+									<ul>
+										<li v-for="(item,index) in week1.last20"><p class="name">{{item.realName}}<i :class="item.tname | formatclass">{{item.tname | formatT}}</i></p></li>
+										
+									</ul>
+								</div> -->
+								
+							</li>
+							<!--6月20日周报-->
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--page-->
+		<script src="js/footer.js"></script>
+		<!--footer-->
+		<script src="js/vue.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/dropdown/dropdown.js"></script>
+		<script src="js/pagination/pagination.js"></script>
+		<script src="js/swiper/swiper-5.3.6.min.js"></script>
+		<!-- <script src="js/ux.js"></script> -->
+		
+		<script src="js/common.js"></script>
+		<script src="js/report.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("nav li").filter('.report').addClass("seled");
+			});
+		</script>
+		<!--js-->
+	</body>
+</html>

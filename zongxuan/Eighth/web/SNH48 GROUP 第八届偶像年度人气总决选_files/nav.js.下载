@@ -1,0 +1,109 @@
+// JavaScript Document
+
+var vote_name = GetCookie("vote_name");
+
+document.writeln("			<nav>");
+
+document.writeln("				<div class=\'menu\'>");
+
+document.writeln("					<canvas class=\'menu-1\'></canvas>");
+
+document.writeln("					<canvas class=\'menu-2\'></canvas>");
+
+document.writeln("				</div>");
+
+document.writeln("				<div class=\'logo\'><img src=\'image/logo.png\'></div>");
+
+document.writeln("				<ul class=\'menu-nav\'>");
+
+document.writeln("					<li class=\'index\'><a href=\'index.html\'><b>首页</b><i>Home</i></a></li>");
+
+document.writeln("					<li class=\'about\'><a href=\'about.html\'><b>总决选介绍</b><i>About</i></a></li>");
+
+document.writeln("					<li class=\'activate\'><a href=\'activate.html\'><b>用户中心</b><i>User Center</i></a></li>");
+
+document.writeln("					<li class=\'report\'><a href=\'report.html\'><b>数据发表</b><i>Report</i></a></li>");
+
+document.writeln("					<li class=\'rewards\'><a href=\'rewards.html\'><b>年度作品介绍</b><i>Rewards</i></a></li>");
+
+document.writeln("					<li class=\'zx-show\'><a href=\'https://www.snh48.com/event/s300/\' target=\'_blank\'><b>总决选演唱会</b><i>Concert</i></a></li>");
+
+document.writeln("				</ul>");
+
+document.writeln("			</nav>");
+
+
+
+
+
+
+
+document.writeln("			<div class=\"login-bar quick-nav\">");
+
+document.writeln("				<div class=\"content\">");
+
+
+if(!isLogin()){
+document.writeln("					<ul class=\"r\">");
+
+document.writeln("						<li><a href=\"vote_login.html\">会员登录</a></li>");
+
+document.writeln("						<li><a href=\"https://user.48.cn/login/index.html\" target=\"_blank\">会员注册</a></li>");
+
+document.writeln("					</ul>");
+}
+if(isLogin()){
+document.writeln("					<ul class=\"r\">");
+
+document.writeln("						<li><a href=\"javascript:;\">欢迎您: "+vote_name+"</a></li>");
+
+document.writeln("						<li><a href=\"javascript:;\" target=\"_blank\" onclick='Logout()'>退出登录</a></li>");
+
+document.writeln("					</ul>");
+}
+document.writeln("				</div>");
+
+document.writeln("			</div>");
+
+
+
+// 取cookies函数
+function GetCookie(name) {
+    var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+    if (arr != null) return unescape(arr[2]);
+    return null;
+}
+function isLogin() {
+    return GetCookie('vote_name') != null && GetCookie('vote_rest') != null && GetCookie('vote_total') != null && GetCookie('token') != null;
+}
+
+/*document.writeln("			<div class=\'quick-link\'>");
+
+document.writeln("				<a href=\'activate-guest.html\' class=\'btn btn-h30\'><span>非注册会员投票</span></a>");
+
+document.writeln("				<a href=\'share.html\' class=\'btn btn-h30\'><span>晒票查询</span></a>");
+
+document.writeln("			</div>");*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
